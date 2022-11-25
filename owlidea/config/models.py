@@ -27,6 +27,9 @@ class Sidebar(models.Model):
     class Meta:
         verbose_name = verbose_name_plural = '侧边栏'
 
+    def __str__(self):
+        return self.title
+
 
 class Link(models.Model):
     STATUS_NORMAL = 1
@@ -45,3 +48,7 @@ class Link(models.Model):
 
     class Meta:
         verbose_name = verbose_name_plural = 'link'
+
+    def __str__(self):
+        return self.title
+
