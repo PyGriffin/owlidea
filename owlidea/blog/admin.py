@@ -4,7 +4,6 @@ from django.utils.html import format_html
 from django.contrib.admin.models import LogEntry
 
 
-
 from .adminforms import PostAdminForm
 from .models import Tag, Post, Category
 
@@ -89,10 +88,10 @@ class PostAdmin(BaseOwnerAdmin):
             )
         }),
         ('额外信息',{
-            'classes' : ('collapse',),
+            'classes' : ('wide',),
             'fields' : (
                 'tags',
-            )
+            ),
         })
     )
 
